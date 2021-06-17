@@ -1,0 +1,64 @@
+:root {
+  --red-color: #bd0000;
+  --green-color: #23ad44;
+  --info-color: #0889ad;
+  --info-hover: #2b424b;
+  --purple-gradient: transparent
+    linear-gradient(149deg, #8e73ec 0%, #40a1e9 100%) 0% 0% no-repeat
+    padding-box;
+  --orange-gradient: transparent
+    linear-gradient(124deg, #ff8360 0%, #f761a8 100%) 0% 0% no-repeat
+    padding-box;
+  --blue-gradient: transparent linear-gradient(125deg, #40a1e9 0%, #39d2c0 100%)
+    0% 0% no-repeat padding-box;
+}
+
+.arrow-hover-btn {
+  background-color: white;
+  color: var(--red-color);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  position: relative;
+  width: 160px;
+  height: 40px;
+  transition: 500ms;
+  box-shadow: 0px 3px 1px -2px rgb(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgb(0, 0, 0, 0.14), 2px 1px 5px 5px rgb(0, 0, 0, 0.05);
+}
+
+.apply-btn-text {
+  font-size: 1rem;
+  padding: 0;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  transition: 500ms;
+}
+
+.arrow-btn-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-400%, 75%);
+  transition: 500ms;
+  opacity: 0;
+}
+
+.arrow-hover-btn:hover {
+  transition: 500ms;
+}
+
+.arrow-hover-btn:hover .apply-btn-text {
+  transition: 500ms;
+  right: 30px;
+}
+
+.arrow-hover-btn:hover .arrow-btn-icon {
+  transform: translate(-140%, 75%);
+  opacity: 1;
+  transition: 500ms;
+}

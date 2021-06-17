@@ -1,0 +1,37 @@
+.custom-input-div {
+  position: relative;
+}
+
+.custom-input-field {
+  width: 100%;
+  border: none;
+  border-bottom: 0.1rem solid rgb(165, 165, 165);
+  padding: 8px 15px;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.custom-input-field.disable {
+  border-bottom: 0.1rem solid rgb(216, 216, 216);
+}
+
+.custom-input-label {
+  position: absolute;
+  left: 18px;
+  top: 8px;
+  color: rgb(196, 196, 196);
+  transition: 500ms;
+}
+
+.custom-input-label.active {
+  transform: translate(0px, -17px);
+  font-size: 12px;
+  transition: 500ms;
+  font-weight: 600;
+  color: var(--green-color);
+}
+
+.custom-input-field:focus {
+  border-bottom: 0.1rem solid var(--green-color);
+  background-color: rgb(240, 244, 247);
+}

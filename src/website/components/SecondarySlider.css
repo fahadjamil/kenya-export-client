@@ -1,0 +1,55 @@
+.secondary-slider.ABOUT {
+  background-image: url("../../shared/assets/AboutSlide.png");
+}
+
+.secondary-slider.SERVICES {
+  background-image: url("../../shared/assets/ServicesSlide.png");
+}
+
+.secondary-slider.TESTIMONIALS {
+  background-image: url("../../shared/assets/Clients.png");
+}
+
+.secondary-slider.FAQS {
+  background-image: url("../../shared/assets/FAQs.jpg");
+}
+
+.secondary-slider.CONTACT {
+  background-image: url("../../shared/assets/FAQs.jpg");
+}
+
+.secondary-slider.default {
+  background-image: url("../../shared/assets/transportation.png");
+}
+
+.secondary-slider {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.603);
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  color: white;
+  text-align: center;
+}
+
+.secondary-slider h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .secondary-slider h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .secondary-slider h1 {
+    font-size: 2rem;
+  }
+}
